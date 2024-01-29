@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        This is my homepage
+
+            <div class="container">
+        <form action="{% url 'result' %}">
+        
+        {% csrf_token %}
+        
+        baseline value: <input type="float" required name="baseline value"> <br> <br>
+        accelerations: <input type="float" required name="accelerations"> <br> <br>
+        fetal_movement: <input type="float" required name="fetal_movement"> <br> <br>
+        uterine_contractions: <input type="float" required name="uterine_contractions"> <br> <br>
+        light_decelerations: <input type="float" required name="light_decelerations"> <br> <br>
+        severe_decelerations: <input type="float" required name="severe_decelerations"> <br> <br>
+        prolongued_decelerations: <input type="float" required name="prolongued_decelerations"> <br> <br>
+        abnormal_short_term_variability: <input type="float" required name="abnormal_short_term_variability"> <br> <br>
+        mean_value_of_short_term_variability: <input type="float" required name="mean_value_of_short_term_variability"> <br> <br>
+        percentage_of_time_with_abnormal_long_term_variability: <input type="float" required name="percentage_of_time_with_abnormal_long_term_variability"> <br> <br>
+        mean_value_of_long_term_variability: <input type="float" required name="mean_value_of_long_term_variability"> <br> <br>
+        histogram_width: <input type="float" required name="histogram_width"> <br> <br>
+        histogram_min: <input type="float" required name="histogram_min"> <br> <br>
+        histogram_max: <input type="float" required name="histogram_max"> <br> <br>
+        histogram_number_of_peaks: <input type="float" required name="histogram_number_of_peaks"> <br> <br>
+        histogram_number_of_zeroes: <input type="float" required name="histogram_number_of_zeroes"> <br> <br>
+        histogram_mode: <input type="float" required name="histogram_mode"> <br> <br>
+        histogram_mean: <input type="float" required name="histogram_mean"> <br> <br>
+        histogram_median: <input type="float" required name="histogram_median"> <br> <br>
+        histogram_variance: <input type="float" required name="histogram_variance"> <br> <br>
+        histogram_tendency: <input type="float" required name="histogram_tendency"> <br> <br>
+
+    <input type="submit" name="" value="submit">
+        </form>
+    </body>
+</html>
